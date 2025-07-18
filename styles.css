@@ -1,0 +1,103 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+  padding: 50px;
+}
+
+.title {
+  font-family: 'IM Fell English SC', serif;
+  text-align: center;
+  margin-top: 40px;
+  color: black;
+  font-size: 48px;
+  font-weight: bold; /* 🔥 fuerza la negrilla */
+}
+  
+
+.card {
+  min-height: 400px; /* 🔧 antes era automático, ahora mínimo 400px */
+}
+  
+
+
+body {
+  background-image: url('./img/anorlondo.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  font-family:'Times New Roman', Times, serif; /* Fuente para toda la página */
+  font-size: 25px;                  /* 👈 Tamaño base para toda la página */
+  color: #eee;
+}
+
+.card {
+  background-color: #1f1f1f;
+  color: #eee;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+  width: 350px; /* 🔥 ahora cada tarjeta es más ancha */
+  padding: 50px; /* un poco más de espacio interno */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px) scale(1.03); /* ✨ se eleva y crece un poco */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.7);   /* ✨ sombra más grande */
+}
+
+
+.card .img img {
+  width: 100%;
+  height: 200px;        /* puedes mantener la altura */
+  object-fit: contain;  /* 🔥 ahora muestra toda la imagen */
+  background-color: #0d0d0d; /* color de fondo para los espacios vacíos */
+}
+
+.card h2 {
+  margin: 0 0 10px 0;
+}
+
+.button a {
+  display: inline-block;       /* se comporta como bloque en línea */
+  background-color: #656464;      /* color de fondo */
+  color: white;                /* color del texto */
+  text-decoration: none;       /* quita el subrayado */
+  padding: 10px 20px;          /* espacio interno */
+  border-radius: 5px;          /* esquinas redondeadas */
+  transition: background-color 0.3s ease; /* efecto al pasar mouse */
+}
+
+.button a:hover {
+  background-color: #666;      /* color al pasar mouse */
+}
+
+
+.about {
+  max-width: 800px;       /* limita el ancho para que se vea más cómodo de leer */
+  margin: 50px auto;      /* centra la sección y agrega espacio arriba/abajo */
+  padding: 20px;
+  background-color: rgba(0,0,0,0.6); /* fondo oscuro semi-transparente */
+  color: #eee;
+  border-radius: 8px;
+  line-height: 1.6;       /* mejora la lectura del texto */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
+
+.about h2 {
+  font-family: 'IM Fell English SC', serif; /* misma fuente gótica si quieres */
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #cec817c5; /* dorado para destacar */
+  text-align: center;
+}
+
